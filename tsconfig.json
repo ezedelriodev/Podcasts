@@ -3,5 +3,34 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  
 }
+
+// {
+//   "include": ["src/**/*", "@types"],
+//   "exclude": ["node_modules/**"],
+//   "compilerOptions": {
+//     "paths": {
+//       "@/*": ["src/*"]
+//     },
+//     "types": ["node", "vitest/globals", "@testing-library/jest-dom/vitest"],
+//     "baseUrl": ".",
+//     "target": "esnext",
+//     "module": "esnext",
+//     "moduleResolution": "bundler",
+//     "inlineSourceMap": true,
+//     "allowSyntheticDefaultImports": true,
+//     "esModuleInterop": true,
+//     "jsx": "react",
+//     "strict": true,
+//     "alwaysStrict": true,
+//     "resolveJsonModule": true,
+//     "traceResolution": false,
+//     "listEmittedFiles": false,
+//     "listFiles": false,
+//     "skipLibCheck": true,
+//     "lib": ["es2022", "dom"]
+//   }
+// }
+
