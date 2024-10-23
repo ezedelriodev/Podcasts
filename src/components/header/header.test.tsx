@@ -11,4 +11,4 @@ describe('Header component', () => {
       const headerElement = screen.getByText(/Podcaster/i);
       expect(headerElement).toBeInTheDocument();
     });
-  });
+});
