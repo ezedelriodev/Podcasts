@@ -7,11 +7,11 @@ import EpisodeDetail from "../pages/episode-detail/episode-detail";
 function PodcastRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/podcast/:podcastId" element={<PodcastDetail />} />
       <Route path="/podcast/:podcastId/episode/:episodeId" element={<EpisodeDetail />} />
 
-      <Route path="/*" element={<Navigate to="/" />} />
+      <Route path="/*" element={<Navigate to="/home" />} />
     </Routes>
   );
 }

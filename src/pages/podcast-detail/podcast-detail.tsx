@@ -1,6 +1,6 @@
 const PodcastDetail = () => {
   return (
-    <div>PodcastDetail</div>
+    <div style={{marginTop:200}}>PodcastDetail</div>
   )
 }
 
