@@ -1,12 +1,15 @@
+import LoadingIcon from "../../components/loading-icon.tsx/loading-icon";
 import { usePodcastListConnect } from "../../hooks/use-podcast-detail.connect";
 
 const Home = () => {
   const podcastListQuery = usePodcastListConnect();
 
-  console.log("podcastListQuery", podcastListQuery)
   return (
-    <div>Home</div>
-  )
+    <>
+      {podcastListQuery.isFetching && <LoadingIcon />}
+      <div>Home</div>
+    </>
+  );
 }
 
 export default Home
