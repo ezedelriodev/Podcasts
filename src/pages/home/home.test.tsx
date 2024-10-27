@@ -1,5 +1,5 @@
 import { render, screen, cleanup } from "@testing-library/react";
-import { usePodcastListConnect } from "../../hooks/use-podcast-detail.connect";
+import { usePodcastListConnect } from "../../hooks/use-podcast-list.connect";
 import { describe, it, expect, vi, afterEach, beforeEach } from "vitest";
 import Home from "./home";
 

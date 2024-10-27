@@ -1,0 +1,71 @@
+.episodes-list__container {
+  display: flex;
+  margin-left: 5%;
+  margin-top: 2%;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1200px;
+}
+.episodes-list__counter {
+  padding-left: 10px;
+  padding-right: 20px;
+  width: 100%;
+  letter-spacing: -0.5px;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.episodes-list__counter h3 {
+  margin: 10px 0;
+}
+
+.episodes-list__table-container {
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  overflow-x: auto;
+  max-height: calc(100vh - 250px);
+  width: 100%;
+  max-width: 100%;
+}
+
+.episodes-list__table {
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+}
+
+.episodes-list__table-header {
+  padding: 8px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  border-bottom: 2px solid #dddddd;
+}
+
+.align-end {
+  text-align: end;
+  padding-right: 20px;
+}
+
+.episodes-list__table-row--background {
+  background-color: #f7f7f7;
+}
+.episodes-list__table-row {
+  padding: 8px 20px 8px 8px;
+  border-bottom: 1px solid #dddddd;
+  font-weight: 500;
+}
+
+.episodes-list__table-link {
+  text-decoration: none;
+  color: rgb(56, 84, 145);
+  font-weight: 500;
+}
+
+.episodes-list__table-link:hover {
+  text-decoration: none;
+  color: rgb(16, 3, 53);
+}

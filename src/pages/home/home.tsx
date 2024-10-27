@@ -1,6 +1,6 @@
 import { ChangeEvent, useEffect, useState } from "react";
 import LoadingIcon from "../../components/loading-icon.tsx/loading-icon";
-import { usePodcastListConnect } from "../../hooks/use-podcast-detail.connect";
+import { usePodcastListConnect } from "../../hooks/use-podcast-list.connect";
 import { Entry } from "../../types/list-types";
 import Filter from "../../components/filter/filter";
 import PodcastCard from "../../components/podcast-card/podcast-card";

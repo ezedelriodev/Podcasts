@@ -1,7 +1,7 @@
 // usePodcastListConnect.test.tsx
 import { renderHook, waitFor } from "@testing-library/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { usePodcastListConnect } from "./use-podcast-detail.connect";
+import { usePodcastListConnect } from "./use-podcast-list.connect";
 import { getApi } from "../services/api/get-api";
 import { getPodcastListStorage, savePodcastListStorage } from "../services/local-storage/local-storage";
 import { vi, describe, it, expect } from "vitest";
