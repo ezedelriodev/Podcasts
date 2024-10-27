@@ -13,6 +13,20 @@ describe("PodcastCard Component", () => {
         {label:"https://is2.png",attributes:{"height":"55"}},
         {label:"https://is3.png",attributes:{"height":"55"}}
     ],
+    category: {
+      attributes: {
+        "im:id": "string",
+        term: "string",
+        scheme: "string",
+        label: "string",
+      },
+    },
+    "im:releaseDate": {
+      label: "string",
+      attributes: {
+        label: "string",
+      },
+    },
     summary: { label: "summaryMock" },
     "im:artist": { label: "Artist Name" },
     title: {
