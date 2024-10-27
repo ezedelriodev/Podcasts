@@ -3,7 +3,7 @@ import { usePodcastListConnect } from "../../hooks/use-podcast-list.connect";
 import { describe, it, expect, vi, afterEach, beforeEach } from "vitest";
 import Home from "./home";
 
-vi.mock("../../hooks/use-podcast-detail.connect", () => ({
+vi.mock("../../hooks/use-podcast-list.connect", () => ({
   usePodcastListConnect: vi.fn(),
 }));
 

@@ -5,7 +5,7 @@ import Sidebar from "../../components/sidebar/sidebar";
 import { useCallback, useEffect, useState } from "react";
 import { Episode, Result } from "../../types/detailTypes";
 import { getPodcastDetailStorage } from "../../services/local-storage/local-storage";
-import { usePodcastDetailConnect } from "../../hooks/usePodcastDetailConnect";
+import { usePodcastDetailConnect } from "../../hooks/use-podcast-detail.connect";
 import LoadingIcon from "../../components/loading-icon.tsx/loading-icon";
 import "./podcast-detail.css";
 
