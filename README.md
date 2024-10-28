@@ -55,7 +55,7 @@ Esto generará los archivos de producción en el directorio dist.
 npm run serve
 ```
 
-Puede ser necesario que previamente solicites un acceso temporal al servidor de demostración.
+Puede ser necesario que previamente tengas que solicitar un acceso temporal al servidor de demostración.
 - Accede a este link: https://cors-anywhere.herokuapp.com/corsdemo
 - Clica el botón: Request temporany access to the demo server.
 
