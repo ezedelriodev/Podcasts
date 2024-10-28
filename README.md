@@ -53,6 +53,7 @@ Esto generará los archivos de producción en el directorio dist.
 7. Después de construir la aplicación, puedes servirla utilizando:
 ```bash
 npm run serve
+```
 
 Puede ser necesario que previamente solicites un acceso temporal al servidor de demostración.
 - Accede a este link: https://cors-anywhere.herokuapp.com/corsdemo
