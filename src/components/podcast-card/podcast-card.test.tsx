@@ -1,9 +1,8 @@
-// PodcastCard.test.tsx
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { describe, it, expect } from "vitest";
 
-import { Entry } from "../../types/list-types"; // Asegúrate de que la ruta sea correcta
+import { Entry } from "../../types/list-types";
 import PodcastCard from "./podcast-card";
 
 describe("PodcastCard Component", () => {

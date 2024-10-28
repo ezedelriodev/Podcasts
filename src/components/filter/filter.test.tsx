@@ -1,5 +1,4 @@
-// Filter.test.tsx
-import { render, screen, fireEvent, logRoles } from "@testing-library/react";
+import { render, screen, logRoles } from "@testing-library/react";
 import { describe, it, expect, vi } from "vitest";
 import Filter from "./filter";
 

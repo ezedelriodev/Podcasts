@@ -31,7 +31,7 @@ vi.mock("../../components/detail-layout/detail-layout", () => ({
 }));
 
 vi.mock("../../components/sidebar/sidebar", () => ({
-  default: ({ id, image, title, artistName }: { id: number; image: string; title: string; artistName: string }) => (
+  default: ({ image, title, artistName }: { id: number; image: string; title: string; artistName: string }) => (
     <div>
       <img src={image} alt={title} />
       <p>{title}</p>
@@ -52,7 +52,6 @@ vi.mock("../../components/episodes-list/episodes-list", () => ({
 
 describe("PodcastDetail Component", () => {
   beforeEach(() => {
-    // Reset mocks antes de cada prueba
     vi.clearAllMocks();
   });
 
@@ -100,7 +99,7 @@ describe("PodcastDetail Component", () => {
     });
   });
 
-  it("debería cargar los detalles del almacenamiento local si están disponibles", async () => {
+  it("should load the local storage details if available", async () => {
     (useParams as unknown as ReturnType<typeof vi.fn>).mockReturnValue({ podcastId: "123" });
     (getPodcastDetailStorage as unknown as ReturnType<typeof vi.fn>).mockReturnValue({
       podcastDetails: {

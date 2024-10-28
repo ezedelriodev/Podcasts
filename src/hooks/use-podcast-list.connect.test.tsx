@@ -1,4 +1,3 @@
-// usePodcastListConnect.test.tsx
 import { renderHook, waitFor } from "@testing-library/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { usePodcastListConnect } from "./use-podcast-list.connect";

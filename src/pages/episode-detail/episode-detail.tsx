@@ -3,24 +3,26 @@ import DetailLayout from "../../components/detail-layout/detail-layout";
 import Sidebar from "../../components/sidebar/sidebar";
 import EpisodePlayer from "../../components/episode-player/episode-player";
 import { Episode, Result } from "../../types/detailTypes";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, useRef } from "react";
 import { getPodcastDetailStorage } from "../../services/local-storage/local-storage";
 import LoadingIcon from "../../components/loading-icon.tsx/loading-icon";
 import { usePodcastDetailConnect } from "../../hooks/use-podcast-detail.connect";
-import "./episode-detail.css"
+import "./episode-detail.css";
 
 const EpisodeDetail = () => {
   const { episodeId = "", podcastId } = useParams<{ podcastId: string; episodeId: string }>();
   const { getPodcastDetail } = usePodcastDetailConnect();
   const [details, setDetails] = useState<Result | null>(null);
   const [episodes, setEpisodes] = useState<Episode[]>([]);
+  const hasFetchedData = useRef(false); 
 
   const fetchEpisodeDetail = useCallback(async () => {
-    if (!podcastId) return;
+    if (!podcastId || hasFetchedData.current) return;
     const { detailsQuery, episodesQuery } = await getPodcastDetail(podcastId);
 
     setDetails(detailsQuery);
     setEpisodes(episodesQuery);
+    hasFetchedData.current = true;
   }, [getPodcastDetail, podcastId]);
 
   useEffect(() => {
@@ -29,6 +31,7 @@ const EpisodeDetail = () => {
     if (podcastStorage) {
       setDetails(podcastStorage.podcastDetails);
       setEpisodes(podcastStorage.episodes);
+      hasFetchedData.current = true;
     } else {
       fetchEpisodeDetail();
     }
