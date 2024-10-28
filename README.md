@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
+# Prueba Técnica: Podcast
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Creación de una mini-aplicación para escuchar podcasts musicales.
 
-Currently, two official plugins are available:
+Este es un proyecto de ejemplo de una aplicación web creada con React y Vite. Esta guía proporciona instrucciones sobre cómo clonar el repositorio y ejecutar la aplicación en diferentes entornos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requisitos Previos
 
-## Expanding the ESLint configuration
+Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (se instala junto con Node.js)
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Para descargar y poner en marcha el proyecto, sige los siguientes pasos:
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/ezedelriodev/Podcasts.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Navega hasta el directorio del proyecto:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd podcast
 ```
+
+3. Antes de ejecutar la aplicación, instala las dependencias necesarias. Puedes hacerlo con el siguiente comando:
+
+```bash
+npm install
+```
+
+4. Si lo deseas, puedes ejecutar los test:
+
+```bash
+npm run test
+```
+
+5. Para iniciar la aplicación en modo desarrollo, donde los assets no están minimizados, ejecuta:
+```bash
+npm run dev
+```
+Esto abrirá la aplicación en tu navegador en http://localhost:5173 (o el puerto que se indique en la consola).
+
+6. Para construir la aplicación para producción, donde los assets están concatenados y minimizados, ejecuta:
+```bash
+npm run build
+```
+Esto generará los archivos de producción en el directorio dist.
+
+7. Después de construir la aplicación, puedes servirla utilizando:
+```bash
+npm run serve
+
