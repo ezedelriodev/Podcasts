@@ -1,0 +1,33 @@
+.filter__container {
+  display: flex;
+  margin-top: 120px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.filter__counter {
+  margin-right: 8px;
+  display: inline-block;
+  height: 18px;
+  width: 46px;
+  padding: 5px 10px 10px 10px;
+  background-color: rgb(56, 84, 145);
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.filter__input {
+  font-size: 16px;
+  height: 20px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #c7c3c3;
+  border-radius: 5px;
+}
+
+.filter__input::placeholder {
+  color: #999;
+}

@@ -1,0 +1,15 @@
+.home__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home__podcastList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin-top: 70px;
+}

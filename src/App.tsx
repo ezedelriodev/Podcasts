@@ -1,16 +1,12 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import PodcastRoutes from './router'
 import Header from './components/header/header'
 
 function App() {
- 
-
   return (
     <>
       <Header />
+      <PodcastRoutes />
     </>
   )
 }
-
 export default App

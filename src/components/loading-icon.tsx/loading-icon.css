@@ -1,0 +1,31 @@
+.loading-icon__container {
+  display: flex;
+  margin-right: 90px;
+  margin-top: 20px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.loading-icon__icon {
+  animation: spin-animation 1.5s infinite linear;
+  display: block;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(365deg);
+  }
+}
+
+.loading-icon__text {
+  font-size: 20px;
+  color: rgb(56, 84, 145);
+  font-weight: bold;
+  margin-left: 8px;
+}
