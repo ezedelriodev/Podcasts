@@ -26,6 +26,19 @@ const Sidebar: FC<Props> = (props) => {
     return data?.feed.entry.find((element) => element.id.attributes["im:id"] === id?.toString())?.summary.label;
   };
 
+  const description: string | undefined = searchDescription()
+
+  const formatDescription = (description: string) => {
+    return description
+      ? description.split('\n').map((line, index) => (
+          <span key={index}>
+            {line}
+            <br />
+          </span>
+        ))
+      : null;
+  };
+
   return (
     <>
       {!podcastListQuery.isFetching && (
@@ -58,10 +71,9 @@ const Sidebar: FC<Props> = (props) => {
               <h4 className="sidebar__header-description">Description:</h4>
             </header>
             <section>
-              <p
-                className="sidebar__description"
-                dangerouslySetInnerHTML={{ __html: searchDescription()?.replace(/\n/g, "<br />") as string }}
-              />
+              <p className="sidebar__description">
+                {description ? formatDescription(description): ""} 
+              </p>
             </section>
           </div>
         </aside>

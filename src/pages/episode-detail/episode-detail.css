@@ -1,0 +1,6 @@
+.episode-detail__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 100px auto 0 auto;
+}

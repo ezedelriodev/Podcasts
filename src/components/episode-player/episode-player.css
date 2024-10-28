@@ -1,0 +1,32 @@
+.episode-player__container {
+  padding: 30px 20px;
+  margin-top: 20px;
+  margin-right: 5%;
+  margin-left: 10%;
+  width: 90%;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .episode-player__container {
+    margin-left: 10px;
+  }
+}
+
+.episode-player__title {
+  margin-top: 0;
+  letter-spacing: -0.5px;
+}
+
+.episode-player__description {
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.episode-player__audio {
+  margin-top: 30px;
+  width: 100%;
+}
