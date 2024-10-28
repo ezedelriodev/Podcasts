@@ -1,8 +1,7 @@
 # Prueba Técnica: Podcast
 
-Creación de una mini-aplicación para escuchar podcasts musicales.
+Mini-aplicación para escuchar podcasts musicales.
 
-Este es un proyecto de ejemplo de una aplicación web creada con React y Vite. Esta guía proporciona instrucciones sobre cómo clonar el repositorio y ejecutar la aplicación en diferentes entornos.
 
 ## Requisitos Previos
 
@@ -54,4 +53,8 @@ Esto generará los archivos de producción en el directorio dist.
 7. Después de construir la aplicación, puedes servirla utilizando:
 ```bash
 npm run serve
+
+Puede ser necesario que previamente solicites un acceso temporal al servidor de demostración.
+- Accede a este link: https://cors-anywhere.herokuapp.com/corsdemo
+- Clica el botón: Request temporany access to the demo server.
 
