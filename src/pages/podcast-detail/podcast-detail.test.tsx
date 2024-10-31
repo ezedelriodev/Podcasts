@@ -5,6 +5,11 @@ import { useParams } from "react-router-dom";
 import { usePodcastDetailConnect } from "../../hooks/use-podcast-detail.connect";
 import { getPodcastDetailStorage } from "../../services/local-storage/local-storage";
 
+interface Episode {
+  trackId: string | number;
+  trackName: string;
+}
+
 vi.mock("react-router-dom", () => ({
   useParams: vi.fn(),
 }));
@@ -41,7 +46,7 @@ vi.mock("../../components/sidebar/sidebar", () => ({
 }));
 
 vi.mock("../../components/episodes-list/episodes-list", () => ({
-  default: ({ episodes }: { episodes: any[] }) => (
+  default: ({ episodes }: { episodes: Episode[] }) => (
     <ul>
       {episodes.map((episode) => (
         <li key={episode.trackId}>{episode.trackName}</li>

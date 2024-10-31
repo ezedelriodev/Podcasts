@@ -33,13 +33,13 @@ export interface Result {
   contentAdvisoryRating: string;
   artworkUrl600: string;
   genreIds?: string[];
-  genres: Array<string>;
+  genres: string[];
   artworkUrl160?: string;
   episodeFileExtension?: string;
   episodeContentType?: string;
   string?: string;
   description?: string;
-  artistIds?: any[];
+  artistIds?: number[];
   shortDescription?: string;
   previewUrl?: string;
   episodeUrl?: string;
@@ -60,7 +60,7 @@ export interface Episode {
   contentAdvisoryRating?: string;
   trackViewUrl?: string;
   previewUrl?: string;
-  genres?: any[];
+  genres?: string[];
   episodeGuid?: string;
   releaseDate?: string;
   description?: string;
